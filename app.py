@@ -47,7 +47,7 @@ def run_ml_app():
     loan_amount = right.number_input('Loan Amount')
     loan_amount_term = left.number_input(label = 'Loan Amount Term', min_value = 20, max_value = 360)
     credit_history = right.selectbox('Credit History', (0.0, 1.0))
-    property_area = st.selecbox('Property Area', ('Rural', 'Semiurban', 'Urban'))
+    property_area = st.selectbox('Property Area', ('Rural', 'Semiurban', 'Urban'))
     button = st.button('Predict')
 
     #If button is clicked
